@@ -32,3 +32,44 @@ git clone git://github.com/dpastoor/dotfiles ~/dotfiles
 cd ~/dotfiles
 ./makesymlinks.sh
 ```
+
+After installation, Vundle can be used to load plugins via:
+
+```
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+Then launch vim and type
+
+```
+:PluginInstall
+```
+
+To get YouCompleteMe working for completions need to get CMake
+
+```
+$ wget http://www.cmake.org/files/v3.3/cmake-3.3.0-rc2.tar.gz
+$ tar xzf cmake-3.3.0-rc2.tar.gz
+$ cd cmake-3.3.0-rc2
+```
+
+Configuration:
+
+In order to configure cmake before installation, run command below.
+
+```
+$ ./configure --prefix=/opt/cmake
+```
+
+We basically instructed the install script to install CMake in /opt/cmake.
+
+Compilation:
+
+```
+$ make
+```
+
+Installation:
+```
+#make install
+```
