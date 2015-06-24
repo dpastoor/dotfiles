@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 syntax on
-colorscheme monokai
+set t_Co=256
+colorscheme PaperColor
 filetype off                  " required
 
 let mapleader = ","
@@ -30,6 +31,7 @@ Plugin 'JuliaLang/julia-vim'
 Plugin 'scrooloose/nerdtree'
 "autocompletion
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'NLKNguyen/papercolor-theme'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -46,10 +46,19 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+# export MANPATH="/usr/local/man:$MANPATH"
+# Export path to Anaconda
+export PATH=/home/devin/anaconda/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:$HOME/.node/bin:$HOME/bin:$HOME/anaconda/bin"
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+export EDITOR='vim'
+
 # export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -75,15 +84,5 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias anaconda='export PATH=~/anaconda/bin:$PATH'
-
-# make sublimetext the default editor
-export EDITOR='subl -w'
-
-# docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/devin/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
 
 # julia
-export PATH="/Applications/Julia-0.3.7.app/Contents/Resources/julia/bin:$PATH"
