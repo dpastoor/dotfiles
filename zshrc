@@ -48,8 +48,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:$HOME/.node/bin:$HOME/bin:$HOME/anaconda/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -75,15 +73,5 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias anaconda='export PATH=~/anaconda/bin:$PATH'
-
-# make sublimetext the default editor
-export EDITOR='subl -w'
-
-# docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/devin/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
 
 # julia
-export PATH="/Applications/Julia-0.3.7.app/Contents/Resources/julia/bin:$PATH"
