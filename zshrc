@@ -46,7 +46,18 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+# export MANPATH="/usr/local/man:$MANPATH"
+# Export path to Anaconda
+export PATH=/home/devin/anaconda/bin:$PATH
 source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+export EDITOR='vim'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
